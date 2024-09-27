@@ -27,15 +27,15 @@ Teacher Functionality:
 
 * Log in as a teacher.
 
-Add student marks.
+* Add student marks.
 
-View student marks.
+* View student marks.
 
 Student Functionality:
 
-Log in as a student.
+* Log in as a student.
 
-View your own marks.
+* View your own marks.
 
 
 **How to Use**
