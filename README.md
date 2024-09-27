@@ -25,7 +25,7 @@ style.css: The stylesheet for styling the web pages.
 
 Teacher Functionality:
 
-Log in as a teacher.
+* Log in as a teacher.
 
 Add student marks.
 
