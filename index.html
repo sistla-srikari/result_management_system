@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-container">
+    <div class="container mt-5">
+        <h2 class="text-center">Login to Result Management System</h2>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Login as:</label>
+                        <select class="form-control" id="role">
+                            <option value="teacher">Teacher</option>
+                            <option value="student">Student</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const role = document.getElementById('role').value;
+            if (role === 'teacher') {
+                window.location.href = 'teacher.html';
+            } else if (role === 'student') {
+                window.location.href = 'student.html';
+            }
+        });
+    </script>
+</body>
+
+</html>
